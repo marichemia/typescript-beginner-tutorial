@@ -8,7 +8,7 @@ interface User {
    * - 'user'
    * - 'super-admin'
    */
-  role: string;
+  role: 'super-admin' | 'user' | 'admin';
 }
 
 export const defaultUser: User = {
@@ -18,3 +18,4 @@ export const defaultUser: User = {
   // @ts-expect-error
   role: "I_SHOULD_NOT_BE_ALLOWED",
 };
+;
